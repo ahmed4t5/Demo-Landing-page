@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maniacal Boxers | Muay Thai Gym</title>
+<meta name="description" content="Maniacal Boxers. High-intensity Muay Thai training for beginners, athletes and fighters.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--black:#070707;--dark:#101010;--paper:#f2f0ea;--gray:#9d9d9d;--red:#e74724;--orange:#ff6a32;--line:#282828}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:#fff;font-family:Inter,Arial,sans-serif}a{color:inherit;text-decoration:none}
+.nav{position:absolute;z-index:20;top:0;left:0;right:0;padding:25px 5vw;display:flex;align-items:center;justify-content:space-between}
+.logo{font:28px/.78 Anton,Impact,sans-serif;letter-spacing:1px}.logo i{color:var(--red);font-style:normal}.navlinks{display:flex;gap:28px;align-items:center;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.navlinks a{opacity:.75}.navlinks a:hover{opacity:1}.nav-cta{padding:13px 19px;background:var(--red);opacity:1!important}
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,rgba(0,0,0,.96),rgba(0,0,0,.63) 48%,rgba(0,0,0,.28)),linear-gradient(0deg,rgba(0,0,0,.8),transparent 55%),url("https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=2200&q=88") center/cover}
+.hero:before{content:"";position:absolute;width:700px;height:700px;right:-250px;top:15%;border:1px solid rgba(255,255,255,.14);border-radius:50%;box-shadow:0 0 0 60px rgba(255,255,255,.025),0 0 0 120px rgba(255,255,255,.015)}
+.hero:after{content:"MUAY THAI";position:absolute;right:-5vw;bottom:6vh;font:clamp(100px,17vw,270px)/.8 Anton,Impact,sans-serif;color:rgba(255,255,255,.035);transform:rotate(-8deg);white-space:nowrap}
+.hero-content{position:relative;z-index:3;padding:150px 5vw 80px;max-width:1000px}.eyebrow,.kicker{font-size:11px;font-weight:900;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-bottom:18px}
+h1,h2,h3{margin:0}h1{font:clamp(60px,10vw,140px)/.85 Anton,Impact,sans-serif;letter-spacing:-1px;text-transform:uppercase}.hero p{max-width:570px;color:#c8c8c8;font-size:17px;line-height:1.7;margin:30px 0}
+.cta{display:inline-flex;background:var(--red);padding:18px 28px;font-size:12px;font-weight:900;letter-spacing:1.4px;text-transform:uppercase;transition:.2s}.cta:hover{background:var(--orange);transform:translateY(-2px)}.micro{display:block;color:#888;font-size:11px;margin-top:12px;letter-spacing:.5px;font-weight:600}
+.ticker{overflow:hidden;background:var(--red);color:#fff;border-top:1px solid #fff;border-bottom:1px solid #fff}.ticker-inner{white-space:nowrap;display:inline-block;padding:14px 0;font:23px/1 Anton,Impact,sans-serif;letter-spacing:1px;animation:scroll 22s linear infinite}.ticker span{margin:0 35px}@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-30%)}}
+.section{padding:110px 5vw;border-bottom:1px solid var(--line)}.intro{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end;margin-bottom:65px}h2{font:clamp(55px,8vw,105px)/.82 Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:-1px}.intro p,.bodycopy{color:var(--gray);line-height:1.8;max-width:600px;margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line)}.card{min-height:460px;position:relative;overflow:hidden;padding:32px;display:flex;flex-direction:column;justify-content:flex-end;background:#111}.card:before{content:"";position:absolute;inset:0;background-position:center;background-size:cover;opacity:.46;transition:.4s}.card:hover:before{opacity:.65;transform:scale(1.04)}.card:nth-child(1):before{background-image:linear-gradient(0deg,#111 0%,transparent 65%),url("https://www.nowmuaythai.com/uploads/LINE_ALBUM_EFC_OCTOBER_2023_231219_3_94d2160062.jpg")}.card:nth-child(2):before{background-image:linear-gradient(0deg,#111 0%,transparent 65%),url("https://maximumfitnessphuket.com/wp-content/uploads/2025/05/Muay-thai-training-in-Thailand-for-beginners-a-guide-by-maximum-fitness-phuket-thailand-muay-thai-training-camp-phuket-1080x675.jpg")}.card:nth-child(3):before{background-image:linear-gradient(0deg,#111 0%,transparent 65%),url("https://evolve-mma.com/wp-content/uploads/2016/04/jak_bags.jpg")}.card>*{position:relative;z-index:2}.num{position:absolute;right:25px;top:18px;font:72px Anton;color:rgba(255,255,255,.13)}.card h3{font:36px/.9 Anton;text-transform:uppercase;margin-bottom:13px}.card p{margin:0;color:#bbb;font-size:14px;line-height:1.6}
+.manifesto{display:grid;grid-template-columns:1.15fr .85fr;min-height:690px}.manifesto-img{background:linear-gradient(0deg,rgba(0,0,0,.25),transparent),url("https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=1800&q=88") center/cover}.manifesto-copy{padding:90px 8vw;display:flex;flex-direction:column;justify-content:center;background:#0d0d0d}.manifesto-copy p{color:var(--gray);line-height:1.8;max-width:510px;margin:28px 0}
+.stamp{width:130px;height:130px;border:2px solid var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;font:22px/.95 Anton;color:var(--red);transform:rotate(-12deg);margin-top:35px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}.stat{padding:55px 25px;text-align:center;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{font:68px/1 Anton}.stat span{display:block;margin-top:10px;color:#777;font-size:10px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+.gallery{display:grid;grid-template-columns:1.35fr .65fr .8fr;grid-template-rows:300px 300px;gap:5px}.gallery div{background-size:cover;background-position:center;position:relative;overflow:hidden}.gallery div:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.45),transparent 60%)}.g1{grid-row:1/3;background-image:url("https://www.nowmuaythai.com/uploads/LINE_ALBUM_EFC_OCTOBER_2023_231219_3_94d2160062.jpg")}.g2{background-image:url("https://cdn.sanity.io/images/nxpteyfv/goguides/917b2f156007437c1c5957159051d9aaa044ac70-1600x1066.jpg")}.g3{background-image:url("https://images.squarespace-cdn.com/content/v1/64cef7d4ab74ae52f9683792/b5c0bc20-a645-4515-a875-c2f8b3b72eca/Rong%2Btraining1.JPG?format=1000w")}.g4{background-image:url("https://evolve-mma.com/wp-content/uploads/2016/04/jak_bags.jpg")}.g5{background-image:url("https://maximumfitnessphuket.com/wp-content/uploads/2025/05/Muay-thai-training-in-Thailand-for-beginners-a-guide-by-maximum-fitness-phuket-thailand-muay-thai-training-camp-phuket-1080x675.jpg")}
+.testimonials{background:var(--paper);color:#111}.testimonials .kicker{color:var(--red)}.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:55px}.review{padding:35px;background:#fff;min-height:280px;display:flex;flex-direction:column;justify-content:space-between}.stars{color:var(--red);letter-spacing:3px;font-size:15px}.review p{font-size:17px;line-height:1.55;margin:20px 0;font-weight:500}.review small{font-size:10px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;color:#777}
+.offer{padding:115px 5vw;text-align:center;background:linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.92)),url("https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=2200&q=88") center/cover}.offer h2{max-width:950px;margin:auto}.offer p{max-width:580px;margin:25px auto 30px;color:#aaa;line-height:1.7}.offer .price{font:70px Anton;margin:20px 0 5px;color:var(--orange)}.offer .price span{font:15px Inter;color:#888;font-weight:600}
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.questions{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line);padding:22px 0}summary{cursor:pointer;list-style:none;font-weight:800;font-size:15px}summary::-webkit-details-marker{display:none}details p{color:#888;line-height:1.7;font-size:14px;margin:15px 0 0}
+footer{padding:45px 5vw;display:flex;justify-content:space-between;gap:20px;color:#666;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}footer .logo{color:#eee}
+@media(max-width:850px){.navlinks a:not(.nav-cta){display:none}.hero{min-height:850px}.intro,.manifesto,.faq{grid-template-columns:1fr;gap:35px}.cards,.reviews{grid-template-columns:1fr}.card{min-height:380px}.manifesto-img{min-height:450px}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line)}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:250px 250px 250px}.g1{grid-row:auto;grid-column:1/3}.g4,.g5{display:none}.offer{padding:90px 5vw}footer{flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="logo" href="#">MANIACAL<i>.</i><br>BOXERS</a>
+  <nav class="navlinks">
+    <a href="#method">Method</a><a href="#training">System</a><a href="#reviews">Results</a>
+    <a class="nav-cta" href="#trial">Claim Free Pass</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">Muay Thai • Striking • Conditioning</div>
+    <h1>STOP WASTING<br>HOURS ON<br>TREADMILLS.</h1>
+    <p>Train the Art of Eight Limbs. Unlock explosive stamina, build real fighting competence, and step into an environment where every round has a purpose.</p>
+    <a class="cta" href="#trial">CLAIM MY FIRST ROUND — FREE</a>
+    <span class="micro">⚡ Zero experience required. Equipment provided for your first session.</span>
+  </div>
+</section>
+
+<div class="ticker"><div class="ticker-inner"><span>UNSTOPPABLE STAMINA</span>•<span>REAL TECHNIQUE</span>•<span>ZERO FAT TO BURN</span>•<span>DISCIPLINE OVER MOTIVATION</span>•<span>UNSTOPPABLE STAMINA</span>•</div></div>
+
+<section class="section" id="training">
+  <div class="intro">
+    <div><div class="kicker">Why Maniacal</div><h2>Built for<br>the relentless.</h2></div>
+    <p>Most fitness programs fail because they are boring. Maniacal Boxers merges technical Muay Thai coaching with structured athletic conditioning. You don't get fit to start—you train to become unreachable.</p>
+  </div>
+  <div class="cards">
+    <article class="card"><span class="num">01</span><h3>The 8-Weapon<br>System</h3><p>Master punches, kicks, knees, and elbows. Transform raw movement into sharp, instinctive technical execution.</p></article>
+    <article class="card"><span class="num">02</span><h3>Gas Tank<br>Architecture</h3><p>Targeted conditioning routines that build functional capacity, power output, and stamina without aimless exhaustion.</p></article>
+    <article class="card"><span class="num">03</span><h3>The Fighter<br>Mindset</h3><p>Whether training for fitness, stress relief, or competition, build the confidence that only comes from real skill acquisition.</p></article>
+  </div>
+</section>
+
+<section class="manifesto" id="method">
+  <div class="manifesto-img"></div>
+  <div class="manifesto-copy">
+    <div class="kicker">The Protocol</div>
+    <h2>Show up.<br>Execute.<br>Evolve.</h2>
+    <p>No wasted movement. Every 60-minute session follows a deliberate sequence: dynamic warm-up, technical isolation, heavy pad work, bag rounds, and conditioning finisher. You get real-time coaching corrections every single class.</p>
+    <a class="cta" href="#trial">Experience A Session</a>
+    <div class="stamp">NO CHEAT<br>CODES.<br>JUST WORK.</div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat"><strong>8</strong><span>Striking Weapons</span></div>
+  <div class="stat"><strong>60</strong><span>Minutes of Focus</span></div>
+  <div class="stat"><strong>100%</strong><span>Coached Rounds</span></div>
+  <div class="stat"><strong>0</strong><span>Gimmicks</span></div>
+</section>
+
+<section class="section">
+  <div class="intro">
+    <div><div class="kicker">Inside the Arena</div><h2>Where confidence<br>is forged.</h2></div>
+    <p>High-energy pad work, dedicated heavy bag lines, and deliberate skill development in an environment built for focus.</p>
+  </div>
+  <div class="gallery">
+    <div class="g1"></div><div class="g2"></div><div class="g3"></div><div class="g4"></div><div class="g5"></div>
+  </div>
+</section>
+
+<section class="section testimonials" id="reviews">
+  <div class="intro">
+    <div><div class="kicker">Verified Proof</div><h2>They didn't come<br>to lose weight.</h2></div>
+    <p>They came to build endurance, master a discipline, and train in a space that respects their effort.</p>
+  </div>
+  <div class="reviews">
+    <article class="review"><div><div class="stars">★★★★★</div><p>“I was terrified walking in with zero combat experience. The coaches broke down every detail so clearly that I was hitting pads with power by week two.”</p></div><small>Daniel R. · Member</small></article>
+    <article class="review"><div><div class="stars">★★★★★</div><p>“The conditioning is intense, but structured. I’ve dropped my resting heart rate and gained more functional endurance here than 3 years at a traditional gym.”</p></div><small>Omar K. · Member</small></article>
+    <article class="review"><div><div class="stars">★★★★★</div><p>“Zero ego in the room. Everyone is focused on pushing each other, and the coaches actually track your personal progression.”</p></div><small>Alex M. · Member</small></article>
+  </div>
+</section>
+
+<section class="offer" id="trial">
+  <div class="kicker">Step into the ring</div>
+  <h2>YOUR FIRST SESSION<br>IS ON US.</h2>
+  <p>Come in, meet the coaching team, learn the fundamental striking stances, and feel the difference of targeted training.</p>
+  <div class="price">$0 <span>FIRST INTRO PASS</span></div>
+  <a class="cta" href="mailto:hello@maniacalboxers.com?subject=Free%20Muay%20Thai%20Trial">CLAIM MY FREE TRIAL PASS</a>
+  <span class="micro">⚡ Limited to 7 guest passes per week to keep coach-to-student ratios tight.</span>
+</section>
+
+<section class="section">
+  <div class="faq">
+    <div><div class="kicker">Clarification</div><h2>Everything you<br>need to know.</h2></div>
+    <div class="questions">
+      <details open><summary>What if I am out of shape right now?</summary><p>Perfect. That is why you start. Our foundational classes scale intensity to your current work capacity so you build up safely.</p></details>
+      <details><summary>Do I need to buy gear before my trial class?</summary><p>No. We supply loaner gloves and hand wraps for your first session. Just bring athletic wear and a water bottle.</p></details>
+      <details><summary>Will I get hit or have to spar?</summary><p>Not unless you choose to. Sparring is strictly optional and reserved for advanced technical tracks. Fundamentals focus on pad work, bag work, and partner drills.</p></details>
+      <details><summary>How many times a week should a beginner train?</summary><p>2 to 3 sessions per week is the sweet spot for rapid skill retention and optimal recovery.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">MANIACAL<i>.</i> BOXERS</div>
+  <div>Muay Thai · Boxing · Conditioning</div>
+  <div>© 2026 Maniacal Boxers</div>
+</footer>
+</body>
+</html>
